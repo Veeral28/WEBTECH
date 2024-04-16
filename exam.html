@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exam</title>
+    <style>
+        * {
+            text-align: center;
+            color: red;
+        }
+
+        body {
+            background-image: url("upes.jpg");
+            background-size: cover;
+        }
+
+        .center {
+            position: sticky;
+            text-align: center;
+            color: blue;
+        }
+
+        img.first {
+            width: 200px;
+            height: 450px;
+            transform: scale(.5, .5);
+        }
+
+        #shape {
+            width: 400px;
+            height: 800px;
+        }
+
+        #div1 {
+            color: red;
+            width: 300px;
+            height: 100px;
+            padding: 35px 25px;
+            border: 50px dotted gold;
+            margin: 60px auto;
+        }
+        .myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: cursor;
+            transition: transform 0.9s ease; 
+        .myButton:hover {
+            transform: scale(1.1); 
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">This is a heading</h1>
+    <p>Hello World</p>
+    <p>thisn is an id </p>
+    <p class="center">This paragraph is blue and center-aligned.</p>
+    <p> hi class </p>
+
+    <img src="University-of-Petroleum-and-Energy-Studies-Fee-Structure.jpg" alt="upes image" class="first"><br>
+    <img src="upes_logo_freelogovectors.net_.png" alt="upes logo" id="shape">
+    <div id="div1">This is a div</div>
+
+    <script>
+        var imp;
+        imp = prompt("enter Age", "");
+        imp = parseInt(imp);
+        if (imp >= 18) {
+            alert("you can drive");
+        } else {
+            alert("you cant drive");
+        }
+
+        function msg() {
+            alert("Hello the function works");
+        }
+
+        function cu(k) {
+            var c = parseInt(k);
+            alert(c * c * c);
+        }
+
+        var Object = { name: "Ishaan", age: 19 };
+        const currentDate = new Date();
+        console.log(currentDate); 
+
+    </script>
+
+    <input type="button" class="myButton" onclick="msg()" value="Press it" /><br><br>
+    <pre>
+    <form>
+        <input type="button" onclick="cu(5)" value="enter an integer">
+        <label for="username">Username:</label>
+        <input type="text" id="glass"> 
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" onclick="aler()" value="submit">
+        <input type="reset" value="reset">
+        <input type="checkbox" id="check" value="reset" name="ghz">
+        <input type="radio" id="check1" value="reset1" name="gkhz">
+    </form>
+    </pre>
+    <script>
+        let a;
+        a=document.getElementById("email");
+        function aler(){
+            alert(a.value);
+        }
+        window.navigator
+        
+    </script>
+</body>
+</html>

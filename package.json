@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "address": "^2.0.2",
+    "express": "^4.19.2"
+  },
+  "name": "html",
+  "version": "1.0.0",
+  "main": "exp5(2).js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

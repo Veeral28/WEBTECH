@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <style>
+         .sidebar {
+            
+            left: 0;
+            top: 50px; 
+            width: 200px; 
+            background-color: blue;
+            color: black; 
+            padding: 20px;
+            
+        }
+        .sidebar {
+            display: none;
+        }
+       
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .header {
+         
+         position:sticky;
+         left: 0;
+         top:0;
+         width: 100%;
+         background-color: beige;
+         color: black;
+         text-align: center;
+         
+     }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <p>Fixed Header</p>
+    </div>    
+    <h2>Login Page</h2>
+    <div class="sidebar">
+        <h3>Sidebar</h3>
+        <p>to enter login id go below</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+        </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="#services">Services</a></li>
+        </ul>
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    
+    <img src="data:image/jpeg;base64,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" alt="invalid">
+
+    <form>
+        <label for="userid">User ID:</label><br>
+        <input type="text" id="userid" name="userid"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember Me</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" value="Forgot Password" onclick="forgotPassword()">
+    </form>
+
+    <script>
+        function forgotPassword() {
+            // Replace the alert with your logic for handling forgot password functionality
+            alert("Forgot password button clicked! Implement your forgot password logic here.");
+        }
+    </script>
+    <p>The University of Petroleum and Energy Studies (UPES) stands as a pioneering institution in the realm of higher education, particularly in the fields of energy and petroleum studies. Nestled amidst the serene backdrop of Dehradun, Uttarakhand, India, UPES has carved a niche for itself, not only within the Indian educational landscape but also on the global stage. With a vision to foster innovation, research, and excellence in sectors vital for the sustainable development of the world, UPES has been instrumental in shaping the future leaders of the energy and allied industries.
+
+        At the heart of UPES's success lies its specialized focus on domains critical to the modern world's functioning, such as energy, petroleum, engineering, management, law, and allied sectors. Established in 2003 through the UPES Act, the university has steadily expanded its academic offerings to meet the evolving demands of industries and economies worldwide. Its commitment to providing industry-aligned programs ensures that students graduate with not just theoretical knowledge but also practical skills that are highly sought after in the job market.
+        
+        One of UPES's distinguishing features is its holistic approach to education, which combines rigorous academic training with hands-on experiential learning. The university boasts state-of-the-art infrastructure, including well-equipped laboratories, simulation centers, and research facilities, enabling students to gain real-world insights and proficiency in their chosen fields. Whether it's exploring reservoir engineering in the petroleum sector or delving into renewable energy technologies, UPES provides ample opportunities for students to engage in practical applications of their learning.
+        
+        Moreover, UPES prides itself on its faculty members, who are not only eminent academicians but also industry experts with years of practical experience. This blend of academic rigor and industry exposure ensures that students receive guidance and mentorship from professionals who understand the intricacies and challenges of the sectors they are preparing to enter. The faculty's dedication to fostering a culture of innovation and critical thinking empowers students to explore new ideas, push boundaries, and contribute meaningfully to their respective fields.
+        
+        In addition to academic excellence, UPES places great emphasis on nurturing well-rounded individuals equipped with the skills and attributes necessary for success in today's dynamic world. The university offers a plethora of co-curricular activities, clubs, and societies that cater to diverse interests, be it sports, cultural pursuits, or entrepreneurship. These extracurricular opportunities not only help students hone their talents but also foster camaraderie, leadership, and teamwork, essential qualities for professional and personal growth.
+        
+        Furthermore, UPES's commitment to research and innovation serves as a catalyst for driving advancements in energy and allied sectors. The university actively collaborates with industry partners, research institutions, and government bodies to undertake cutting-edge research projects aimed at addressing pressing challenges and exploring emerging opportunities. From developing sustainable energy solutions to enhancing operational efficiency in the oil and gas sector, UPES's research endeavors contribute significantly to shaping the future of global industries.
+        
+        Another hallmark of UPES is its strong focus on sustainability and environmental stewardship. Recognizing the interconnectedness of energy, the environment, and society, the university integrates principles of sustainability across its academic programs and campus operations. From promoting renewable energy initiatives to implementing eco-friendly practices, UPES is committed to instilling a sense of environmental responsibility in its students and fostering a culture of sustainability that extends beyond the campus borders.
+        
+        Moreover, UPES's global outlook and collaborative ethos have led to partnerships and exchange programs with renowned institutions worldwide. Through these international collaborations, students have the opportunity to broaden their horizons, gain exposure to different cultures and perspectives, and build networks that transcend geographical boundaries. Such initiatives not only enrich the educational experience but also prepare students to thrive in an increasingly interconnected and diverse world.
+        
+        In conclusion, the University of Petroleum and Energy Studies (UPES) stands as a beacon of excellence in higher education, particularly in the fields of energy, petroleum, and allied sectors. With its industry-aligned programs, world-class infrastructure, esteemed faculty, and commitment to research, innovation, and sustainability, UPES equips students with the knowledge, skills, and values needed to become leaders and change-makers in their chosen fields. As UPES continues to evolve and adapt to the shifting dynamics of the global landscape, its legacy of excellence and impact is poised to endure for generations to come</p>
+        
+</body>
+
+</html>

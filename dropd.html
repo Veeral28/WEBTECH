@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Populate Drop-down with Numbers</title>
+</head>
+<body>
+    <select id="numDrop">
+        <option value="">Select a number</option>
+    </select>
+
+    <script>
+        var dropdown = document.getElementById('numDrop');
+
+        for (var i = 1; i <= 1000; i++) {
+            var option = document.createElement('option');
+            option.text = i;
+            option.value = i;
+            dropdown.add(option);
+        }
+    </script>
+</body>
+</html>
